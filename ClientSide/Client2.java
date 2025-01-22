@@ -1,4 +1,6 @@
 package ClientSide;
+
+
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
@@ -8,16 +10,16 @@ import java.util.Scanner;
 
 import Inferface.Voting;
 
-
-// is vote status if the client voted.
-
-
-public class Client {
+public class Client2 {
     public static void main(String[] args) {
         try {
             // Look up the remote service
-            Voting voting = (Voting) Naming.lookup("rmi://192.168.16.87/VotingService");   
+            Voting voting = (Voting) Naming.lookup("rmi://192.168.185.194/VotingService");
+
+          
             Scanner scanner = new Scanner(System.in);
+
+
             while (true) {
                 // Display menu options to the user
                 System.out.println("\n--- Online Voting System ---");
